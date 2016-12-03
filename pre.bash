@@ -6,8 +6,9 @@ mkdir problems
 cd problems
 mkdir ss_lab1
 cd ss_lab1
-wget 'https://raw.githubusercontent.com/uofthr/physicslab/master/Makefile'
-wget 'https://raw.githubusercontent.com/uofthr/physicslab/master/problem.c'
-wget 'https://raw.githubusercontent.com/uofthr/physicslab/master/restart_0051.bin'
+curl -O 'https://raw.githubusercontent.com/uofthr/physicslab/master/Makefile'
+curl -O 'https://raw.githubusercontent.com/uofthr/physicslab/master/problem.c'
+curl -O 'https://raw.githubusercontent.com/uofthr/physicslab/master/restart_0051.bin'
 make
+touch /tmp/done.tag
 
