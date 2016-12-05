@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /tmp/rebound/problems/ss_lab1/
 FAIL=0
 ./rebound &
 ./rebound &
