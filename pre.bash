@@ -6,9 +6,9 @@ mkdir problems
 cd problems
 mkdir ss_lab1
 cd ss_lab1
-curl -O -H 'Cache-Control: no-cache' 'https://raw.githubusercontent.com/uofthr/physicslab/master/Makefile'
-curl -O -H 'Cache-Control: no-cache' 'https://raw.githubusercontent.com/uofthr/physicslab/master/problem.c'
-curl -O -H 'Cache-Control: no-cache' 'https://raw.githubusercontent.com/uofthr/physicslab/master/restart_0051.bin'
+curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/physicslab/master/Makefile?$RANDOM"
+curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/physicslab/master/problem.c$RANDOM"
+curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/physicslab/master/restart_0051.bin?$RANDOM"
 make
 touch /tmp/done.tag
 
