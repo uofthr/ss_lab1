@@ -5,7 +5,6 @@ FAIL=0
 ./rebound &
 ./rebound &
 ./rebound &
-touch /tmp/done.tag
 
 for job in `jobs -p`
 do
