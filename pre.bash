@@ -11,6 +11,7 @@ curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofth
 curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/$LASTCOMMIT/problem.c"
 curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/$LASTCOMMIT/restart_0051.bin"
 curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/$LASTCOMMIT/run.bash"
+chmod a+x run.bash
 make
 touch /tmp/done.tag
 
