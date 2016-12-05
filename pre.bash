@@ -10,6 +10,6 @@ curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofth
 curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/physicslab/master/problem.c$RANDOM"
 curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/physicslab/master/restart_0051.bin?$RANDOM"
 make
-echo "DONE"
+echo "DONE2"
 touch /tmp/done.tag
 
