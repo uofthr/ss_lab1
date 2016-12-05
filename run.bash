@@ -14,7 +14,7 @@ done
 echo $FAIL
 if [ "$FAIL" == "0" ];
 then
-tar -cvf transfer.tar run_1*.bin
+#tar -cvf transfer.tar run_1*.bin
 touch /tmp/done.tag
 else
 touch /tmp/error.tag
