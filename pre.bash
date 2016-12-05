@@ -6,9 +6,10 @@ mkdir problems
 cd problems
 mkdir ss_lab1
 cd ss_lab1
-curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/79588b7/Makefile"
-curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/79588b7/problem.c"
-curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/79588b7/restart_0051.bin"
+LASTCOMMIT=`curl -s https://api.github.com/repos/uofthr/ss_lab1/commits/master | grep sha |head -n 1 | cut -d\" -f4`
+curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/$LASTCOMMIT/Makefile"
+curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/$LASTCOMMIT/problem.c"
+curl -v -O -H 'Cache-Control: no-cache' "https://raw.githubusercontent.com/uofthr/ss_lab1/$LASTCOMMIT/restart_0051.bin"
 make
 touch /tmp/done.tag
 
