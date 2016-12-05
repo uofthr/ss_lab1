@@ -31,7 +31,8 @@ char newfilename[1024];
 int main(int argc, char* argv[]) {
     // Restart
     struct reb_simulation* r = reb_simulationarchive_restart("restart_0051.bin");
-    reb_simulationarchive_load_snapshot(r,"restart_0051.bin",159047);
+    reb_simulationarchive_load_snapshot(r,"restart_0051.bin",155000);
+    //reb_simulationarchive_load_snapshot(r,"restart_0051.bin",159047);
 
     // Randomize
     srand(getpid() * time(NULL));
