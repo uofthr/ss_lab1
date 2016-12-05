@@ -26,6 +26,8 @@ void gr_force(struct reb_simulation* const r){
     }
 }
 
+char newfilename[1024];
+
 int main(int argc, char* argv[]) {
     // Restart
     struct reb_simulation* r = reb_simulationarchive_restart("restart_0051.bin");
@@ -37,7 +39,9 @@ int main(int argc, char* argv[]) {
     r->ri_whfast.p_j[3].x += 1e-10 *shift;
 
     // New SA
-    r->simulationarchive_filename = "restart_0051_col.bin";
+    int pid = getpid();
+    sprintf(newfilename, "run1_%09d.bin", pid);
+    r->simulationarchive_filename = newfilename;
     r->simulationarchive_walltime = 0.;
     r->simulationarchive_next = 0.;
     r->simulationarchive_interval_walltime = 0.;
