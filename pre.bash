@@ -1,5 +1,7 @@
 #!/bin/bash
 cd /tmp
+rm -rf rebound
+rm -rf done.tag
 curl -s -S -O -H 'Cache-Control: no-cache' "https://codeload.github.com/hannorein/rebound/zip/master"
 unzip master
 rm -f master
