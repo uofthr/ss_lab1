@@ -31,7 +31,8 @@ char newfilename[1024];
 int main(int argc, char* argv[]) {
     // Restart
     struct reb_simulation* r = reb_create_simulation_from_simulationarchive("restart_0051.bin");
-    reb_simulationarchive_load_snapshot(r,"restart_0051.bin",145000);
+    reb_simulationarchive_load_snapshot(r,"restart_0051.bin",135000);
+  //reb_simulationarchive_load_snapshot(r,"restart_0051.bin",145000);
   //reb_simulationarchive_load_snapshot(r,"restart_0051.bin",120000);
   //reb_simulationarchive_load_snapshot(r,"restart_0051.bin",140000);
   //reb_simulationarchive_load_snapshot(r,"restart_0051.bin",150000);
